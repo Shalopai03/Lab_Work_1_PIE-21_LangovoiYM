@@ -1,0 +1,10 @@
+const fs = require("fs");
+
+const textToWrite = "Hello world";
+fs.writeFile('text.txt', textToWrite, (err) => {
+    if (err) {
+        console.error('Ошибка записи в файл:', err);
+    } else {
+        console.log('Текст записан');
+    }
+});
